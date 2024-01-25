@@ -5,7 +5,6 @@ const cidade = document.querySelector('#cidade')
 const uf = document.querySelector('#uf')
 const ibge = document.querySelector('#ibge')
 
-// faz com que quando seja retirado o foco no cep, seja disparado um evento
 function pesquisaCep(valor) {
   //expressao regular para validar o cep
   const somenteNumeros = valor.replace(/\D/g, '')
