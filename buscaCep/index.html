@@ -3,39 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Consulta CEP</title>
   </head>
   <body>
     <!-- o atributo action especifica para onde os dados serão enviados -->
-    
+
     <div class="content">
       <div class="text">
-      <h1>Digite o cep desejado</h1>
-      <p>e aperte TAB</p>
-    </div>
-    <form method="get" action="">
-      <label for="cep">CEP</label>
-      <input
-        type="text"
-        name="cep"
-        id="cep"
-        value=""
-        size="10"
-        maxlength="9"
-        onblur="pesquisaCep(this.value)"
-      /><br />
-      <label for="rua">Rua</label>
-      <input type="text" name="rua" id="rua" size="60" /><br />
-      <label for="bairro">Bairro</label>
-      <input type="text" name="bairro" id="bairro" size="40" /><br />
-      <label for="cidade">Cidade</label>
-      <input type="text" name="cidade" id="cidade" size="40" /><br />
-      <label for="estado">Estado</label>
-      <input type="text" name="uf" id="uf" size="2" /><br />
-      <label for="ibge">IBGE</label>
-      <input type="text" name="ibge" id="ibge" size="8" />
-    </form>
+        <h1>Busque o cep que desejar:</h1>
+      </div>
+      <form method="get" action="">
+        <label for="cep">CEP</label>
+        <input
+          type="text"
+          name="cep"
+          id="cep"
+          value=""
+          size="10"
+          maxlength="9"
+          onblur="pesquisaCep(this.value)"
+          onkeyup="verificarEnter(event)" placeholder="Digite seu cep aqui:"
+        /><br />
+        <label for="rua">Rua</label>
+        <input type="text" name="rua" id="rua" size="60" readonly /><br />
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" id="bairro" size="40" readonly /><br />
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade" size="40" readonly /><br />
+        <label for="estado">Estado</label>
+        <input type="text" name="uf" id="uf" size="2" readonly /><br />
+        <label for="ibge">IBGE</label>
+        <input type="text" name="ibge" id="ibge" size="8" readonly />
+      </form>
     </div>
   </body>
   <script type="text/javascript" src="./script.js"></script>
