@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Consulta CEP</title>
   </head>
   <body>
@@ -23,7 +23,8 @@
           size="10"
           maxlength="9"
           onblur="pesquisaCep(this.value)"
-          onkeyup="verificarEnter(event)" placeholder="Digite seu cep aqui:"
+          onkeyup="verificarEnter(event)"
+          placeholder="Digite seu cep aqui:"
         /><br />
         <label for="rua">Rua</label>
         <input type="text" name="rua" id="rua" size="60" readonly /><br />
@@ -38,5 +39,5 @@
       </form>
     </div>
   </body>
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="./assets/js/script.js"></script>
 </html>
